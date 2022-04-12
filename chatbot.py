@@ -8,5 +8,17 @@ import tensorflow
 import random
 
 import json
-with open('intent.json') as file:
+with open('intents.json') as file:
     data = json.load(file)
+
+words= []
+labels= []
+docs_x= []
+docs_y= []    
+
+for intent in data['intents']:
+    for pattern in intent['patterns']:
+        wrds = nltk.wordpunct_tokenize(pattern)
+        words.extend(wrds)
+        
+    
