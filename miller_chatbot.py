@@ -3,99 +3,46 @@ from nltk.chat.util import Chat, reflections
 
 QA = [
     [
-        r"what type of pizza do you have here?", [
-            "neapolitan,chicago ,greek, carlifornia \n and if you are very hungry go for the large greek it comes with large coke for free", ]
+         r"Hi|How are you|Is anyone there?|Moin|Hello|Good day",
+            ["Hello, thanks for visiting","Good to see you again","Hi there, how can I help?", ]
     ],
     [
-        r"how long does it take to get my pizza delivered?",
-        [" expect your pizza in 15mins once you now and you  are in Awka city, how fast is that?", ]
+        r"Bye|See you later|Goodbye",
+            ["See you later", "thanks for visiting","Have a nice day","Bye! Come back again soon."]
     ],
     [
-        r"that's really fast",
-        ["that's why we are the best in town.. LOL", ]
+        r"Thanks|Thank you|That's helpful",
+            ["Happy to help!","Any time!","My pleasure"]
     ],
     [
-        r"when is your closing time ?",
-        ["we deliver round the clock, 24/7, we don't rest till our customers are all satisfied", ]
-    ],
-
-    [
-        r"what is the average price of a pizza and a drink?",
-        [" $15 will do..", ]
+        r"no wlan|wlan is not working|no signal",
+           ["thank you for stating your problem","thank you, your problem is noted"]
     ],
     [
-        r"hi|hey|hello",
-        ["Hello", "Hey there", ]
+        r"can i speak with a employee|i need personal help",
+            ["a employee will call you, please wait a moment"]
     ],
     [
-        r"do you have kebab?",
-        [" yes of course , you may also like our roasted chicken and chinese rice, very delicious", ]
-
+        r"no internet|internet is not working|no connection",
+            ["thank you for stating your problem","thank you, your problem is noted"]
     ],
     [
-        r"what (.*) want ?",
-        ["I want to help you find answers !", ]
-
+        r"calls doesnt work|i cant call|calling is not possible",
+            ["thank you for stating your problem","thank you, your problem is noted"]
     ],
     [
-        r"(.*) (human|robot) ?",
-        ["haha am a result of chibueze's  exploration of NLTK Library, and he is working to make me more inteligent with machine learning, i wish to be like rasa in the future", ]
+        r"internet crashes|no internet for shot piriods|internet connaction is no stabil",
+            ["thank you for stating your problem","thank you, your problem is noted"]
     ],
     [
-        r"(.*) (location|city) ?",
-        ['Awka, Anambra', ]
-    ],
-    [
-        r"how is weather in (.*)?",
-        ["Weather in %1 is awesome like always", "Its perfect here in %1", "Too cold man here in %1",
-         "I have heard about %1 You are lucky to stay in the beautiful city of %1", ]
-    ],
-    [
-        r"i work in (.*)?",
-        ["%1 is an amazing company to work for, I have heard about it.",
-            "Hope you love working in %1 :)", ]
-    ],
-    [
-        r"(.*)raining in (.*)",
-        ["You never know when it can rain here in %2",
-            "Damn its raining too much here in %2"]
-    ],
-    [
-        r"how (.*) health(.*)",
-        ["I'm a computer program, so I'm always healthy ", ]
-    ],
-    [
-        r"(.*) (sports|games) ?",
-        ["I'm a very big fan of soccer", ]
-    ],
-    [
-        r"quit",
-        ["Bye take care. Hope to see you soon friend :) ",
-            "It was nice talking to you. See you soon :)"]
-    ],
-    [
-        r"(.*) your menu?",
-        [" yes of course kindly follow this link: https://tinyurl.com/89zvy46y"]
-    ],
-    [
-        r"(.*) siri",
-        ["Hey!! do you know her as well? What a small world! ", "She is my best friend"]
-    ],
-    [
-        r"(.*) (direction|maps|i am lost)",
-        ["I think this is best for you: https://www.google.com/maps ",
-            "Are you lost? Keep calm and click here:https://www.google.com/maps"]
-    ],
-
-    [
-        r"what (.*) like ?",
-        ["There's only one thing i like. doing the wish of the customer,you know they are kings/ queens !!!!!!"]
+        r"router is offline|router doesent work",
+            ["thank you for stating your problem","thank you, your problem is noted"]
     ],
 ]
 
 
 def miller():
-    print("Hi, I'm miller. I know you like delicious meals , i believe thats why you are here? :) \nPlease type lowercase English language to start a conversation. Type quit to leave , Am here to serve you")
+    print("Hi, I'm Tom. I know you like delicious meals , i believe thats why you are here? :) \nPlease type lowercase English language to start a conversation. Type quit to leave , Am here to serve you")
 
 
 chat = Chat(QA, reflections)
