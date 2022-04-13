@@ -1,46 +1,46 @@
 QA = [
     [
-        r"Hi", "How are you", "Is anyone there?", "Moin", "Hello", "Good day", [
+        r "Hi", "How are you", "Is anyone there?", "Moin", "Hello", "Good day", [
             "Hello, thanks for visiting", "Good to see you again", "Hi there, how can I help?", ]
     ],
 
     [
-        r"patterns": ["Bye", "See you later", "Goodbye"],
-            "responses": ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
+        r ["Bye", "See you later", "Goodbye"],
+             ["See you later, thanks for visiting", "Have a nice day", "Bye! Come back again soon."]
     ],
 
     [
-        r"patterns": ["Thanks", "Thank you", "That's helpful"],
-            "responses": ["Happy to help!", "Any time!", "My pleasure"]
+        r ["Thanks", "Thank you", "That's helpful"],
+             ["Happy to help!", "Any time!", "My pleasure"]
     ],
 
     [
-        r"patterns":["no wlan", "wlan is not working", "no signal"],
+        r ["no wlan", "wlan is not working", "no signal"],
             "responses":["thank you for stating your problem", "thank you, your problem is noted"]
     ],
 
     [
-        r"patterns": ["can i speak with a emplyee", "i need personal help", ""],
-            "responses": ["a emplyee will call you, please wait a moment"]
+        r ["can i speak with a emplyee", "i need personal help"],
+             ["a emplyee will call you, please wait a moment"]
     ],
 
     [
-        r"patterns":["no internet", "internet is not working", "no connection"],
+        r ["no internet", "internet is not working", "no connection"],
             "responses":["thank you for stating your problem", "thank you, your problem is noted"]
     ],
 
     [
-        r"patterns":["calls doesnt work", "i cant call", "calling is not possible"],
+        r ["calls doesnt work", "i cant call", "calling is not possible"],
             "responses":["thank you for stating your problem", "thank you, your problem is noted"]
     ],
 
     [
-        r"patterns":["internet crashes", "no internet for shot piriods", "internet connaction is no stabil"],
+        r ["internet crashes", "no internet for shot piriods", "internet connaction is no stabil"],
             "responses":["thank you for stating your problem", "thank you, your problem is noted"]
     ],
 
     [
-        r"patterns":["router is offline", "router doesent work"],
+        r ["router is offline", "router doesent work"],
             "responses":["thank you for stating your problem", "thank you, your problem is noted"]
     ]
 ]
