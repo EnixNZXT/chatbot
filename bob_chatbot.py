@@ -22,19 +22,17 @@ QA = [
             ["a employee will call you, please wait a moment","please wait a moment, a employee will call you as soon as possible"]
     ],
     [
-        r"(.*)no internet(.*)|(.*)internet is not working(.*)|(.*)no connection(.*)",
-            ["thank you for stating your problem,\nan employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]
+        r"(.*)no internet(.*)|(.*)internet is not working(.*)|(.*)no connection(.*)|(.*)doesnt work(.*)",
+            ["thank you for stating your problem, an employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]
     ],
     [
         r"(.*)calls doesnt work(.*)|(.*)i cant|can`t call(.*)|(.*)calling is not possible(.*)",
-["thank you for stating your problem,\nan employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]    ],
-    [
+["thank you for stating your problem, an employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]    [
         r"(.*)internet crashes(.*)|(.*)no internet for short periods(.*)|(.*)internet connection is not stable(.*)",
-["thank you for stating your problem,\nan employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]    ],
+["thank you for stating your problem, an employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]    ],
     [
         r"(.*)router is offline(.*)|(.*)router doesent work(.*)",
-            ["thank you for stating your problem,\nan employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]
-    ],
+["thank you for stating your problem, an employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]    ],
     [
         r"quit",
         ["Bye take care. Hope to see you soon friend :) ",
@@ -44,7 +42,7 @@ QA = [
 
 
 def bob():
-    print("Welcome to the Solutions IT Customer Support , how can i help You? :) \nPlease type lowercase English language to start a conversation. Type quit to leave , Am here to serve you")
+    print("Welcome to the Solutions IT Customer Support , how can i help You? :) \nPlease type lowercase English language to start a conversation. Type quit to leave")
 
 
 chat = Chat(QA, reflections)
