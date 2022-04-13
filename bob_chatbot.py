@@ -27,12 +27,14 @@ QA = [
     ],
     [
         r"(.*)calls doesnt work(.*)|(.*)i cant|can`t call(.*)|(.*)calling is not possible(.*)",
-["thank you for stating your problem, an employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]    [
+["thank you for stating your problem,\nan employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]    ],
+    [
         r"(.*)internet crashes(.*)|(.*)no internet for short periods(.*)|(.*)internet connection is not stable(.*)",
-["thank you for stating your problem, an employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]    ],
+["thank you for stating your problem,\nan employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]    ],
     [
         r"(.*)router is offline(.*)|(.*)router doesent work(.*)",
-["thank you for stating your problem, an employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]    ],
+            ["thank you for stating your problem,\nan employee will contact you as soon as possible","thank you, your problem is noted and will processed from an employee"]
+    ],
     [
         r"quit",
         ["Bye take care. Hope to see you soon friend :) ",
